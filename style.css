@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f6f8;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+* {
+    text-decoration: none !important;
+    color: #000;
+}
+
+header {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10%;
+    padding-block: 15px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.heading-post {
+    padding: 0 10%;
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+.facebook,
+.twitter,
+.instagram,
+.linkedin {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+    margin-top: 30px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.facebook {
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('https://cdn.discordapp.com/attachments/1092490681492176917/1107699139178942564/Untitled-3.png');
+}
+
+.instagram {
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('https://cdn.discordapp.com/attachments/1092490681492176917/1107699702402654309/Untitled-3.png');
+}
+
+.twitter {
+    background-image: url('https://cdn.discordapp.com/attachments/1092490681492176917/1107700494362742784/Untitled-3.png');
+}
+
+.linkedin {
+    background-image: url('https://cdn.discordapp.com/attachments/1092490681492176917/1107701009511354508/Untitled-3.png');
+}
+
+.media {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.whole {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    margin-top: 50px;
+    padding: 0 10%;
+}
+
+.software {
+    width: 95%;
+}
+
+.ads {
+    top: 50px;
+    position: sticky;
+    height: 650px;
+    width: 100%;
+    transition: 0.4s ease;
+}
+
+.ads img {
+    /* position: skicky; */
+    top: 60px;
+    right: 80px;
+    z-index: -80;
+    /* display: none; */
+    /* Add this line to hide the image */
+}
+
+.gee {
+    text-align: center;
+    font-size: 40px;
+}
+
+.whole:hover .ads img {
+    display: block;
+    /* Show the image when hovering over the "whole" class */
+}
+
+.show-ads {
+    /* opacity: 1; */
+    top: 50px;
+}
+
+footer {
+    background-color: #ffffff;
+    padding-block: 50px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+    width: 100%;
+    margin-top: 50px;
+}
+
+
+@media only screen and (max-width: 1340px) {
+    header {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .heading-post {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .one {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .one img {
+        width: 100%;
+    }
+
+    .heading-post p {
+        width: 100%;
+    }
+
+    .two {
+        display: none;
+    }
+
+    .whole,
+    .software,
+    .ads {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .ads img {
+        width: 100%;
+    }
+}
